@@ -15,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nimmy/proshop.git"
+    "url": "git+https://github.com/nimmy/MERN-ecomm.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nimmy/proshop/issues"
+    "url": "https://github.com/nimmy/MERN-ecomm/issues"
   },
-  "homepage": "https://github.com/nimmy/proshop#readme",
+  "homepage": "https://github.com/nimmy/MERN-ecomm#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "concurrently": "^8.1.0",
