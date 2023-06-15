@@ -33,8 +33,8 @@ const registerUser = asyncHandler(async(req, res) => {
     const userExist = await User.findOne({email});
 
     if (userExist) {
-        res.status(401);
-        throw new Error('User already Exist')
+        res.status(400);
+        throw new Error('User already Exist');
     }
 
     const user = await User.create({
@@ -45,7 +45,7 @@ const registerUser = asyncHandler(async(req, res) => {
 
     if (user) {
         generateToekn(res, user._id);
-        res.status(200).json({
+        res.status(201).json({
             _id: user._id,
             name: user.name,
             email: user.email,

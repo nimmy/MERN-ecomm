@@ -13,6 +13,8 @@ import PDP from './screens/PDP';
 import Cart from './screens/Cart';
 import { Provider } from 'react-redux';
 import store from './store';
+import Login from './screens/Login';
+import Register from './screens/Register';
 
 
 
@@ -22,6 +24,8 @@ const route = createBrowserRouter(
       <Route index={true} path='/' element={<Home />} />
       <Route path='/product/:id' element={<PDP />} />
       <Route path='/cart' element={<Cart />} />
+      <Route path='/login' element={<Login />} />
+      <Route path='/register' element={<Register />} />
     </Route>
   )
 )
