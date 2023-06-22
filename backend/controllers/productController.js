@@ -4,11 +4,13 @@ import Product from "../models/productModel.js";
 
 
 const getProdcuts = asyncHandler(async (req, res) => {
+    console.log('PRODUCT', req.Users);
     const Products = await Product.find({})
     res.json(Products);
 });
 
 const getProdcutByID = asyncHandler(async (req, res) => {
+    console.log('PRODUCT ID', req.user);
     // const product = Products.find(item => item._id === req.params.id);
     const product = await Product.findById(req.params.id);
     

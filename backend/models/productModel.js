@@ -8,7 +8,7 @@ const reviewSchema = mongoose.Schema({
 }, {timestamps: true});
 
 const productSchema = new mongoose.Schema({
-    user:{type: mongoose.Schema.Types.ObjectId, required: true, ref: "User"},
+    user:{type: mongoose.Schema.Types.ObjectId, required: true, ref: "user"},
     name: {type: String, required: true},
     image: {type: String, required: true},
     brand: {type: String, required: true},
